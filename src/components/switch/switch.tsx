@@ -74,24 +74,24 @@ export default function Switch({ value, onchange }: Proptype) {
 
   return (
     //<View className=" w-40 h-40 bg-yellow-300 justify-center items-center">
-    <YellowBox>
-      <Pressable className=" my-9" onPress={handlePress}>
-        <Bar style={BarAnimeStyle}>
-          <Circle style={CircleAnimeStyle}></Circle>
-        </Bar>
-      </Pressable>
-    </YellowBox>
+    // <YellowBox>
+    <Pressable className=" my-3 mx-5" onPress={handlePress}>
+      <Bar style={BarAnimeStyle}>
+        <Circle style={CircleAnimeStyle}></Circle>
+      </Bar>
+    </Pressable>
+    // </YellowBox>
     //</View>
   );
 }
 
-const YellowBox = styled.View`
-  width: 192px;
-  height: 192px;
-  background-color: yellow;
-  justify-content: center;
-  align-items: center;
-`;
+// const YellowBox = styled.View`
+//   width: 192px;
+//   height: 192px;
+//   background-color: yellow;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
 //className=" justify-center w-12 h-6 rounded-2xl bg-slate-400"
 function Bar({ children, style }) {
